@@ -16,29 +16,95 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
+    <header class="custom-logo-bar">
+    <div class="logo-text">
+        <span class="logo-main">
+        <span class="shawarma">Shawarma</span> 
+        <span class="mango">Mango’s</span>
+        </span>
+    </div>
+    </header>
+
     <main>
-        <header class="site-header site-news-detail-header">
+        <header class="site-header site-menu-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h2>Our Menus</h2>
-                        <p>Perfect for all Breakfast, Lunch and Dinner</p>
+                    <div class="col-12 text-center">
+                        <h1 class="text-white">Our Menus</h1>
+                        <p class="text-white">Perfect for all Breakfast, Lunch and Dinner</p>
+
+                        <div class="menu-buttons mt-4">
+                            <a href="#wraps" class="menu-btn">Wraps</a>
+                            <a href="#platters" class="menu-btn">Platters</a>
+                            <a href="#desserts" class="menu-btn">Desserts / Drinks</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- You can insert your cleaned menu sections here -->
-        <!-- Replace the following block with your actual menu content -->
-        <section class="menu section-padding">
+
+        <!-- Wraps Section -->
+        <section id="wraps" class="menu section-padding bg-white">
             <div class="container">
+                <h2 class="section-title text-start">Wraps</h2>
+                <div class="row">
+
+                    <!-- Chicken Shawarma Wrap -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/chicken-shawarma.jpg" class="img-fluid menu-image" alt="Chicken Shawarma Wrap">
+                                <span class="menu-tag bg-warning">Wrap</span>
+                            </div>
+
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Chicken Shawarma Wrap</h4>
+                                <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>9.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beef Shawarma Wrap -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/beef-shawarma.jpg" class="img-fluid menu-image" alt="Beef Shawarma Wrap">
+                                <span class="menu-tag bg-warning">Wrap</span>
+                            </div>
+
+                            <div class="menu-info d-flex flex-wrap align-items-center">
+                                <h4 class="mb-0">Beef Shawarma Wrap</h4>
+                                <span class="price-tag bg-white shadow-lg ms-4"><small>$</small>9.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="platters" class="menu section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title text-start">Platters</h2>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h3>Sample Menu Item</h3>
-                        <p>This is where your meals, desserts and drinks will go.</p>
+                        <p>Chicken Shawarma Platter, Beef Shawarma Platter<br>Skewer Platter, Falafel Platter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu section-padding bg-white">
+            <div class="container">
+                <h2 class="section-title text-start">Desserts / Drinks</h2>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>Fruit Salads with Ashta and Nuts<br>Fresh Fruit Juices and Smoothies<br>Fried Chicken & Fried Chicken Combo</p>
                     </div>
                 </div>
             </div>
