@@ -170,14 +170,6 @@ html {
     border-radius: 20px;
 }
 
-/* Align name and price in same line */
-.menu-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
-
 /* Keep font styling nice */
 .menu-info h4 {
     font-size: 1.2rem;
@@ -201,6 +193,16 @@ html {
   margin-bottom: 5px;
 }
 
+.menu-thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px 20px 20px; /* Add side and bottom padding */
+  border-radius: 12px;
+  background-color: #fff;
+}
+
 .price-bubble {
   display: inline-block;
   background: #fff;
@@ -211,8 +213,45 @@ html {
   color: #b5892e;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
   transition: transform 0.2s ease;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .price-bubble:hover {
   transform: scale(1.05);
+}
+
+.menu-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.menu-description {
+  font-size: 0.95rem;
+  color: #666;
+  min-height: 48px;
+  margin-top: 0px;
+}
+
+/* --- Back to top arrow --- */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #e8d8bc;
+  color: #333;
+  padding: 10px 12px;
+  border-radius: 50%;
+  display: none;
+  z-index: 999;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #d2b48c;
+  color: #000;
 }
