@@ -192,3 +192,27 @@ html {
     transform: scale(1.05);
 }
 
+
+/* Price*/
+.label-small {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.price-bubble {
+  display: inline-block;
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #b5892e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease;
+}
+
+.price-bubble:hover {
+  transform: scale(1.05);
+}
