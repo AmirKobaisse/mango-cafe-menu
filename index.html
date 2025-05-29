@@ -20,15 +20,6 @@
 </head>
 <body>
 
-    <header class="custom-logo-bar">
-    <div class="logo-text">
-        <span class="logo-main">
-        <span class="shawarma">Shawarma</span> 
-        <span class="mango">Mango’s</span>
-        </span>
-    </div>
-    </header>
-
     <main>
         <header class="site-header site-menu-header">
             <div class="container">
@@ -52,98 +43,217 @@
         <section id="wraps" class="menu section-padding bg-white">
             <div class="container">
                 <h2 class="section-title text-start">Wraps</h2>
-                <div class="row">
+                
+                <div class="wraps-scroll-wrapper">
+                    <!-- Swipe -->
+                    <button class="scroll-arrow scroll-left" id="scroll-left">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <div class="wraps-scroll-container">
+                        <div class="row flex-nowrap">
 
-                    <!-- Chicken Shawarma Wrap -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
-                            <div>
-                                <div class="menu-image-wrap">
-                                    <img src="images/chicken-shawarma.jpg" class="img-fluid menu-image" alt="Chicken Shawarma Wrap">
-                                    <span class="menu-tag bg-warning">Hot!</span>
+                            <!-- Chicken Shawarma Wrap -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/chicken-shawarma.jpg" class="img-fluid menu-image" alt="Chicken Shawarma Wrap">
+                                            <span class="menu-tag bg-warning">650–750 kcal</span>
+                                        </div>
+
+                                        <h4 class="mb-2">Chicken Shawarma Wrap</h4>
+                                        <p class="menu-description">
+                                            Chicken with garlic, lettuce, tomatoes, pickles, turnip pickle, and onions.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$9.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$11.50</span>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <h4 class="mb-2">Chicken Shawarma Wrap</h4>
-                                <p class="menu-description">
-                                    Chicken with garlic, lettuce, tomatoes, pickles, turnip pickle, and onions.
-                                </p>
                             </div>
 
-                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
-                                <div class="text-center">
-                                    <span class="label-small">S</span><br>
-                                    <span class="price-bubble">$9.99</span>
+
+                            <!-- Beef Shawarma Wrap -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/beef-shawarma.jpg" class="img-fluid menu-image" alt="Beef Shawarma Wrap">
+                                            <span class="menu-tag bg-warning">700–800 kcal</span>
+                                        </div>
+
+                                        <h4 class="mb-2">Beef Shawarma Wrap</h4>
+                                        <p class="menu-description">
+                                            Beef shawarma with hummus, lettuce, sesame sauce, tomatoes, pickles, turnip pickle, and onions.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$9.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$11.50</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <span class="label-small">L</span><br>
-                                    <span class="price-bubble">$11.50</span>
+                            </div>
+
+                            <!-- Mix Shawarma Wrap -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/mix-shawarma.jpg" class="img-fluid menu-image" alt="Mix Shawarma Wrap">
+                                            <span class="menu-tag bg-warning">750–850 kcal</span>
+                                        </div>
+
+                                        <h4 class="mb-2">Mix Shawarma Wrap</h4>
+                                        <p class="menu-description">
+                                            Combination of chicken and beef shawarma with garlic, hummus, lettuce, sesame sauce, tomatoes, pickles, turnip pickle, and onions.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$9.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$11.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chicken Taouk Wrap -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/chicken-taouk.jpg" class="img-fluid menu-image" alt="Chicken Taouk Wrap">
+                                            <span class="menu-tag bg-warning">650–750 kcal</span>
+                                        </div>
+
+                                        <h4 class="mb-2">Chicken Taouk Wrap</h4>
+                                        <p class="menu-description">
+                                            Grilled chicken taouk with garlic sauce, lettuce, tomatoes, pickles, and turnip pickle.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$9.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$11.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Beef Skewer Wrap -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/beef-skewer.jpg" class="img-fluid menu-image" alt="Beef Skewer Wrap">
+                                            <span class="menu-tag bg-warning">700–800 kcal</span>
+                                        </div>
+
+                                        <h4 class="mb-2">Beef Skewer Wrap</h4>
+                                        <p class="menu-description">
+                                            Grilled beef skewers wrapped with hummus, lettuce, tomatoes, pickles, and onions.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$9.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$11.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Kafta Wrap -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/kafta-wrap.jpg" class="img-fluid menu-image" alt="Kafta Wrap">
+                                            <span class="menu-tag bg-warning">750–850 kcal</span>
+                                        </div>
+
+                                        <h4 class="mb-2">Kafta Wrap</h4>
+                                        <p class="menu-description">
+                                            Grilled kafta (ground beef with parsley and onions), hummus, lettuce, tomatoes, pickles, and tahini sauce.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$9.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$11.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Falafel Wrap -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/falafel-wrap.jpg" class="img-fluid menu-image" alt="Falafel Wrap">
+                                            <span class="menu-tag bg-warning">550–650 kcal</span>
+                                        </div>
+
+                                        <h4 class="mb-2">Falafel Wrap</h4>
+                                        <p class="menu-description">
+                                            Falafel, Tomatoes, pickles, turnip pickles, onions, salad, and sesame sauce.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$6.49</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$8.99</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <!-- Beef Shawarma Wrap -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
-                            <div>
-                                <div class="menu-image-wrap">
-                                    <img src="images/beef-shawarma.jpg" class="img-fluid menu-image" alt="Beef Shawarma Wrap">
-                                    <span class="menu-tag bg-warning">Wrap</span>
-                                </div>
-
-                                <h4 class="mb-2">Beef Shawarma Wrap</h4>
-                                <p class="menu-description">
-                                    Beef shawarma with hummus, lettuce, sesame sauce, tomatoes, pickles, turnip pickle, and onions.
-                                </p>
-                            </div>
-
-                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
-                                <div class="text-center">
-                                    <span class="label-small">S</span><br>
-                                    <span class="price-bubble">$9.99</span>
-                                </div>
-                                <div class="text-center">
-                                    <span class="label-small">L</span><br>
-                                    <span class="price-bubble">$11.50</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <!-- Mix Shawarma Wrap -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
-                            <div>
-                                <div class="menu-image-wrap">
-                                    <img src="images/mix-shawarma.jpg" class="img-fluid menu-image" alt="Mix Shawarma Wrap">
-                                    <span class="menu-tag bg-warning">Hot!</span>
-                                </div>
-
-                                <h4 class="mb-2">Mix Shawarma Wrap</h4>
-                                <p class="menu-description">
-                                    Combination of chicken and beef shawarma with garlic, hummus, lettuce, sesame sauce, tomatoes, pickles, turnip pickle, and onions.
-                                </p>
-                            </div>
-
-                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
-                                <div class="text-center">
-                                    <span class="label-small">S</span><br>
-                                    <span class="price-bubble">$10.49</span>
-                                </div>
-                                <div class="text-center">
-                                    <span class="label-small">L</span><br>
-                                    <span class="price-bubble">$12.50</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
+                    <!-- Closing scroll -->
+                    <button class="scroll-arrow scroll-right" id="scroll-right">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </section>

@@ -27,3 +27,21 @@
   });
 });
 
+// Swipe technique
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollContainer = document.querySelector('.wraps-scroll-container');
+    const scrollRight = document.getElementById('scroll-right');
+    const scrollLeft = document.getElementById('scroll-left');
+
+    const scrollAmount = 320; // Adjust scroll distance as needed
+
+    scrollRight.addEventListener('click', function () {
+        scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    scrollLeft.addEventListener('click', function () {
+        scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+});
+
+
