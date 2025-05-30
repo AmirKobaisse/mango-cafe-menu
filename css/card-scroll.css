@@ -1,0 +1,238 @@
+/* === Horizontal Scrollable Cards === */
+
+.wraps-scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wraps-scroll-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wraps-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.wraps-scroll-container .row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.menu-card {
+  flex: 0 0 auto;
+  min-width: 260px;
+  max-width: 300px;
+  scroll-snap-align: start;
+  padding: 0;
+  margin: 0;
+}
+
+/* Shrinking the rows */
+.menu-thumb h4 {
+  font-size: 1.1rem;          /* Adjust size as needed */
+  font-weight: 600;           /* 400 = normal, 600 = semi-bold, 700 = bold */
+  font-family: 'Poppins', sans-serif; /* Example of modern clean font */
+  color: #333;                /* Dark grey, not pure black */
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+
+.menu-description {
+  margin-bottom: 0.15rem !important;
+  font-size: 0.6rem !important;
+  line-height: 1.1 !important;
+}
+
+.menu-thumb .d-flex {
+  margin-top: 0 !important;
+}
+
+/* Image containers */
+
+.menu-image-wrap {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.menu-image-wrap img.menu-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Scroll Arrows */
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 1.3rem;
+  z-index: 10;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-arrow:hover {
+  background: #f0f0f0;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.scroll-left {
+  left: 10px;
+}
+
+.scroll-right {
+  right: 10px;
+}
+
+/* Smaller texts kcl */
+.menu-calorie {
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  background-color: #f8d7a6;
+  color: #a65b00;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-weight: 600;
+}
+
+
+/* === Responsive Adjustments === */
+
+/* Tablet (≤ 992px): 2 cards per screen */
+@media (max-width: 991.98px) {
+  .menu-card {
+    min-width: 48% !important;
+  }
+}
+
+/* Mobile (≤ 576px): 2–3 cards with smaller fonts */
+@media (max-width: 575.98px) {
+  .menu-card {
+    min-width: 33.3% !important;
+    width: 33.3% !important;
+    flex: 0 0 auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .menu-thumb {
+    padding: 3px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .menu-thumb .label-small {
+  font-size: 0.55rem;
+  margin-bottom: 0px; /* Was 1px */
+  line-height: 1;
+  }
+
+  .menu-thumb .price-bubble {
+  font-size: 0.6rem;
+  padding: 1px 5px;
+  margin-top: -4px; /* Pulls bubble closer to label */
+  }
+
+  .menu-image-wrap {
+    height: 80px !important;
+    border-radius: 6px;
+  }
+
+  .menu-thumb h4 {
+    font-size: 0.65rem;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    white-space: normal;
+  }
+
+  .menu-description {
+    font-size: 0.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+  }
+
+  .price-bubble {
+    font-size: 0.62rem;
+    padding: 1px 5px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+
+  .label-small {
+    font-size: 0.55rem;
+    margin-bottom: 1px;
+    line-height: 1;
+  }
+
+  .menu-thumb .d-flex {
+    gap: 0.2rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .menu-thumb .text-center {
+    margin-top: -2px;
+    flex: 0 0 auto;
+  }
+
+  .menu-tag {
+    font-size: 0.45rem;
+    padding: 2px 4px;
+    border-radius: 5px;
+    top: 6px;
+    right: 6px;
+    position: absolute;
+    max-width: 50%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #wraps.section-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wraps-scroll-container .row {
+    gap: 0.2rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .menu-calorie {
+  font-size: 0.35rem !important;
+  padding: 1px 4px !important;
+  bottom: 4px !important;
+  left: 4px !important;
+  border-radius: 5px !important;
+  }
+}
