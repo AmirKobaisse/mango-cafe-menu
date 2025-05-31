@@ -31,6 +31,7 @@
 
                         <div class="menu-buttons mt-4">
                             <a href="#wraps" class="menu-btn">Wraps</a>
+                            <a href="#burgers" class="menu-btn">Burgers</a>
                             <a href="#platters" class="menu-btn">Platters</a>
                             <a href="#desserts" class="menu-btn">Desserts / Drinks</a>
                         </div>
@@ -97,7 +98,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
                                         <div class="text-center">
                                             <span class="label-small">S</span><br>
                                             <span class="price-bubble">$9.99</span>
@@ -125,7 +126,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
                                         <div class="text-center">
                                             <span class="label-small">S</span><br>
                                             <span class="price-bubble">$9.99</span>
@@ -153,7 +154,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
                                         <div class="text-center">
                                             <span class="label-small">S</span><br>
                                             <span class="price-bubble">$9.99</span>
@@ -181,7 +182,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
                                         <div class="text-center">
                                             <span class="label-small">S</span><br>
                                             <span class="price-bubble">$9.99</span>
@@ -209,7 +210,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
                                         <div class="text-center">
                                             <span class="label-small">S</span><br>
                                             <span class="price-bubble">$9.99</span>
@@ -237,7 +238,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
                                         <div class="text-center">
                                             <span class="label-small">S</span><br>
                                             <span class="price-bubble">$6.49</span>
@@ -259,18 +260,195 @@
             </div>
         </section>
 
-        <section id="platters" class="menu section-padding bg-light">
+        <!-- Burgers Section -->
+        <section id="burgers" class="menu section-padding bg-light">
             <div class="container">
-                <h2 class="section-title text-start">Platters</h2>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p>Chicken Shawarma Platter, Beef Shawarma Platter<br>Skewer Platter, Falafel Platter</p>
+                <h2 class="section-title text-start">Burgers</h2>
+
+                <div class="row g-3">
+                    <!-- Classic Burger -->
+                    <div class="col-6">
+                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                            <div>
+                                <div class="menu-image-wrap">
+                                    <img src="images/beef-burger.jpg" class="img-fluid menu-image" alt="Classic Burger">
+                                    <span class="menu-calorie">750–850 kcal</span>
+                                </div>
+                                <h4 class="mb-2">Classic Burger</h4>
+                                <p class="menu-description">
+                                    Beef patty, lettuce, tomato, pickles, mustard, mayonaise, and ketchup.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                                <div class="text-center">
+                                    <span class="label-small">S</span><br>
+                                    <span class="price-bubble">$7.99</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="label-small">L</span><br>
+                                    <span class="price-bubble">$10.49</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chicken Burger -->
+                    <div class="col-6">
+                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                            <div>
+                                <div class="menu-image-wrap">
+                                    <img src="images/chicken-burger.jpg" class="img-fluid menu-image" alt="Chicken Burger">
+                                    <span class="menu-calorie">680–780 kcal</span>
+                                </div>
+                                <h4 class="mb-2">Chicken Burger</h4>
+                                <p class="menu-description">
+                                    Chicken fillet, lettuce, tomato, and garlic mayo.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                                <div class="text-center">
+                                    <span class="label-small">S</span><br>
+                                    <span class="price-bubble">$7.49</span>
+                                </div>
+                                <div class="text-center">
+                                    <span class="label-small">L</span><br>
+                                    <span class="price-bubble">$9.99</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="desserts" class="menu section-padding bg-white">
+        <!-- Platters Section -->
+        <section id="platters" class="menu section-padding bg-white">
+            <div class="container">
+                <h2 class="section-title text-start">Platters</h2>
+
+                <div class="wraps-scroll-wrapper">
+                    <button class="scroll-arrow scroll-left" id="platters-scroll-left">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+
+                    <div class="wraps-scroll-container">
+                        <div class="row">
+                            <!-- Chicken Shawarma Platter -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/chicken-platter.jpg" class="img-fluid menu-image" alt="Chicken Shawarma Platter">
+                                            <span class="menu-calorie">800–950 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">Chicken Shawarma Platter</h4>
+                                        <p class="menu-description">
+                                            Chicken shawarma, rice, garlic sauce, salad, pickles, and pita bread.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$12.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$15.49</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Beef Shawarma Platter -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/beef-platter.jpg" class="img-fluid menu-image" alt="Beef Shawarma Platter">
+                                            <span class="menu-calorie">850–1000 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">Beef Shawarma Platter</h4>
+                                        <p class="menu-description">
+                                            Beef shawarma, rice, tahini sauce, salad, pickles, and pita bread.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$13.49</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$15.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skewer Platter -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/skewer-platter.jpg" class="img-fluid menu-image" alt="Skewer Platter">
+                                            <span class="menu-calorie">900–1050 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">Skewer Platter</h4>
+                                        <p class="menu-description">
+                                            2 skewers of your choice, rice, hummus, salad, and pita bread.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$13.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$16.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Falafel Platter -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/falafel-platter.jpg" class="img-fluid menu-image" alt="Falafel Platter">
+                                            <span class="menu-calorie">700–850 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">Falafel Platter</h4>
+                                        <p class="menu-description">
+                                            Falafel balls, hummus, salad, pickles, tahini sauce, and pita bread.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$10.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$13.49</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="scroll-arrow scroll-right" id="platters-scroll-right">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- DD section -->
+        <section id="desserts" class="menu section-padding bg-light">
             <div class="container">
                 <h2 class="section-title text-start">Desserts / Drinks</h2>
                 <div class="row">

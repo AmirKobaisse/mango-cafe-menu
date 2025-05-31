@@ -175,6 +175,11 @@
   margin-top: -4px; /* Pulls bubble closer to label */
   }
 
+  /* Price adjustment */
+   .menu-thumb .d-flex.price-align {
+    justify-content: flex-end !important;
+   }
+
   .menu-image-wrap {
     height: 80px !important;
     border-radius: 6px;

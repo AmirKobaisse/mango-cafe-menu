@@ -189,3 +189,18 @@ html {
   background: #0056b3; /* Prevent red or any other default behavior */
 }
 
+/* Reducing section size */
+@media (max-width: 575.98px) {
+  section.menu,
+  section.section-padding {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
