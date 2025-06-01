@@ -31,7 +31,7 @@
 
                         <div class="menu-buttons mt-4">
                             <a href="#wraps" class="menu-btn">Wraps</a>
-                            <a href="#burgers" class="menu-btn">Burgers</a>
+                            <a href="#burgers" class="menu-btn">Burgers / Fried</a>
                             <a href="#platters" class="menu-btn">Platters</a>
                             <a href="#desserts" class="menu-btn">Desserts / Drinks</a>
                         </div>
@@ -260,66 +260,149 @@
             </div>
         </section>
 
-        <!-- Burgers Section -->
+        <!-- Burgers & Fried Chicken Section -->
         <section id="burgers" class="menu section-padding bg-light">
             <div class="container">
-                <h2 class="section-title text-start">Burgers</h2>
+                <h2 class="section-title text-start">Burgers // Fried Chicken</h2>
 
-                <div class="row g-3">
-                    <!-- Classic Burger -->
-                    <div class="col-6">
-                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
-                            <div>
-                                <div class="menu-image-wrap">
-                                    <img src="images/beef-burger.jpg" class="img-fluid menu-image" alt="Classic Burger">
-                                    <span class="menu-calorie">750–850 kcal</span>
+                <div class="wraps-scroll-wrapper">
+                    <!-- Arrows -->
+                    <button class="scroll-arrow scroll-left" id="burgers-scroll-left">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+
+                    <div class="wraps-scroll-container">
+                        <div class="row flex-nowrap">
+
+                            <!-- Classic Burger -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/beef-burger.jpg" class="img-fluid menu-image" alt="Classic Burger">
+                                            <span class="menu-calorie">750–850 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">Classic Burger</h4>
+                                        <p class="menu-description">
+                                            Beef patty, lettuce, tomato, pickles, mustard, mayo, and ketchup.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$7.99</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$10.49</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h4 class="mb-2">Classic Burger</h4>
-                                <p class="menu-description">
-                                    Beef patty, lettuce, tomato, pickles, mustard, mayonaise, and ketchup.
-                                </p>
                             </div>
-                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
-                                <div class="text-center">
-                                    <span class="label-small">S</span><br>
-                                    <span class="price-bubble">$7.99</span>
+
+                            <!-- Chicken Burger -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/chicken-burger.jpg" class="img-fluid menu-image" alt="Chicken Burger">
+                                            <span class="menu-calorie">680–780 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">Chicken Burger</h4>
+                                        <p class="menu-description">
+                                            Chicken fillet, lettuce, tomato, and garlic mayo.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
+                                        <div class="text-center">
+                                            <span class="label-small">S</span><br>
+                                            <span class="price-bubble">$7.49</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label-small">L</span><br>
+                                            <span class="price-bubble">$9.99</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <span class="label-small">L</span><br>
-                                    <span class="price-bubble">$10.49</span>
+                            </div>
+
+                            <!-- Fried Chicken (2pc) -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/2pc-fried.jpg" class="img-fluid menu-image" alt="Fried Chicken">
+                                            <span class="menu-calorie">700–850 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">2 Piece Special</h4>
+                                        <p class="menu-description">
+                                            Crispy golden fried chicken with garlic dip, can, and a side of garlic potatoes or rice.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-auto">
+                                        <span class="price-bubble">$6.50</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fried Chicken Combo -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/5pc-fried.jpg" class="img-fluid menu-image" alt="Fried Chicken Combo">
+                                            <span class="menu-calorie">900–1100 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">5 Piece Special</h4>
+                                        <p class="menu-description">
+                                            5pc fried chicken, garlic dip, can, and a side of rice or garlic potatoes.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-auto">
+                                        <span class="price-bubble">$14.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                           <!-- Fried Chicken Packs -->
+                            <div class="menu-card list-only-card">
+                                <div class="menu-thumb bg-white">
+                                    <div>
+                                    <h4 class="menu-title-small">Fried Chicken Packs</h4>
+                                    <div class="menu-list-compact">
+                                        <div class="menu-list-item d-flex justify-content-between py-1 px-2 border-bottom">
+                                        <span>5 Pieces</span><span>$10.00</span>
+                                        </div>
+                                        <div class="menu-list-item d-flex justify-content-between py-1 px-2 border-bottom">
+                                        <span>9 Pieces (Whole Chicken)</span><span>$16.00</span>
+                                        </div>
+                                        <div class="menu-list-item d-flex justify-content-between py-1 px-2 border-bottom">
+                                        <span>12 Pieces</span><span>$21.00</span>
+                                        </div>
+                                        <div class="menu-list-item d-flex justify-content-between py-1 px-2 border-bottom">
+                                        <span>15 Pieces</span><span>$26.50</span>
+                                        </div>
+                                        <div class="menu-list-item d-flex justify-content-between py-1 px-2 border-bottom">
+                                        <span>20 Pieces (Bucket)</span><span>$35.00</span>
+                                        </div>
+                                        <div class="menu-list-item d-flex justify-content-between py-1 px-2">
+                                        <span>25 Pieces</span><span>$47.00</span>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Chicken Burger -->
-                    <div class="col-6">
-                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
-                            <div>
-                                <div class="menu-image-wrap">
-                                    <img src="images/chicken-burger.jpg" class="img-fluid menu-image" alt="Chicken Burger">
-                                    <span class="menu-calorie">680–780 kcal</span>
-                                </div>
-                                <h4 class="mb-2">Chicken Burger</h4>
-                                <p class="menu-description">
-                                    Chicken fillet, lettuce, tomato, and garlic mayo.
-                                </p>
-                            </div>
-                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
-                                <div class="text-center">
-                                    <span class="label-small">S</span><br>
-                                    <span class="price-bubble">$7.49</span>
-                                </div>
-                                <div class="text-center">
-                                    <span class="label-small">L</span><br>
-                                    <span class="price-bubble">$9.99</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Arrows -->
+                    <button class="scroll-arrow scroll-right" id="burgers-scroll-right">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
+
 
         <!-- Platters Section -->
         <section id="platters" class="menu section-padding bg-white">
@@ -343,18 +426,11 @@
                                         </div>
                                         <h4 class="mb-2">Chicken Shawarma Platter</h4>
                                         <p class="menu-description">
-                                            Chicken shawarma, rice, garlic sauce, salad, pickles, and pita bread.
+                                            Chicken shawarma, rice, garlic sauce, tabbouleh, pickles, and garlic potatoes.
                                         </p>
                                     </div>
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
-                                        <div class="text-center">
-                                            <span class="label-small">S</span><br>
-                                            <span class="price-bubble">$12.99</span>
-                                        </div>
-                                        <div class="text-center">
-                                            <span class="label-small">L</span><br>
-                                            <span class="price-bubble">$15.49</span>
-                                        </div>
+                                    <div class="d-flex justify-content-end mt-auto price-align">
+                                        <span class="price-bubble">$18.00</span>
                                     </div>
                                 </div>
                             </div>
@@ -369,44 +445,87 @@
                                         </div>
                                         <h4 class="mb-2">Beef Shawarma Platter</h4>
                                         <p class="menu-description">
-                                            Beef shawarma, rice, tahini sauce, salad, pickles, and pita bread.
+                                            Beef shawarma, rice, tahini sauce, hummus, tabbouleh, pickles, and garlic potatoes.
                                         </p>
                                     </div>
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
-                                        <div class="text-center">
-                                            <span class="label-small">S</span><br>
-                                            <span class="price-bubble">$13.49</span>
-                                        </div>
-                                        <div class="text-center">
-                                            <span class="label-small">L</span><br>
-                                            <span class="price-bubble">$15.99</span>
-                                        </div>
+                                    <div class="d-flex justify-content-end mt-auto price-align">
+                                        <span class="price-bubble">$18.00</span>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Skewer Platter -->
+                            <!-- Mix Shawarma Platter -->
                             <div class="menu-card">
                                 <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
                                     <div>
                                         <div class="menu-image-wrap">
-                                            <img src="images/skewer-platter.jpg" class="img-fluid menu-image" alt="Skewer Platter">
+                                            <img src="images/mix-shawarma-platter.jpg" class="img-fluid menu-image" alt="Mix Shawarma Platter">
                                             <span class="menu-calorie">900–1050 kcal</span>
                                         </div>
-                                        <h4 class="mb-2">Skewer Platter</h4>
+                                        <h4 class="mb-2">Mix Shawarma Platter</h4>
                                         <p class="menu-description">
-                                            2 skewers of your choice, rice, hummus, salad, and pita bread.
+                                            Mix of chicken and beef shawarma, rice, hummus, tabbouleh, garlic, and potatoes.
                                         </p>
                                     </div>
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
-                                        <div class="text-center">
-                                            <span class="label-small">S</span><br>
-                                            <span class="price-bubble">$13.99</span>
+                                    <div class="d-flex justify-content-end mt-auto price-align">
+                                        <span class="price-bubble">$19.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chicken Skewer Platter -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/ch-skewer-platter.jpg" class="img-fluid menu-image" alt="Chicken Skewer Platter">
+                                            <span class="menu-calorie">900–1050 kcal</span>
                                         </div>
-                                        <div class="text-center">
-                                            <span class="label-small">L</span><br>
-                                            <span class="price-bubble">$16.50</span>
+                                        <h4 class="mb-2">Chicken Skewer Platter</h4>
+                                        <p class="menu-description">
+                                            2 chicken skewers, rice, hummus, garlic, tabbouleh, and garlic potatoes.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-auto price-align">
+                                        <span class="price-bubble">$19.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Beef Skewer Platter -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/bf-skewer-platter.jpg" class="img-fluid menu-image" alt="Beef Skewer Platter">
+                                            <span class="menu-calorie">900–1050 kcal</span>
                                         </div>
+                                        <h4 class="mb-2">Beef Skewer Platter</h4>
+                                        <p class="menu-description">
+                                            2 beef skewers, rice, hummus, garlic, tabbouleh, and garlic potatoes.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-auto price-align">
+                                        <span class="price-bubble">$19.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Kafta Skewer Platter -->
+                            <div class="menu-card">
+                                <div class="menu-thumb d-flex flex-column h-100 justify-content-between">
+                                    <div>
+                                        <div class="menu-image-wrap">
+                                            <img src="images/kf-skewer-platter.jpg" class="img-fluid menu-image" alt="Beef Skewer Platter">
+                                            <span class="menu-calorie">900–1050 kcal</span>
+                                        </div>
+                                        <h4 class="mb-2">Kafta Skewer Platter</h4>
+                                        <p class="menu-description">
+                                            2 kafta skewers, rice, hummus, garlic, tabbouleh, and garlic potatoes.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-auto price-align">
+                                        <span class="price-bubble">$19.00</span>
                                     </div>
                                 </div>
                             </div>
@@ -421,18 +540,11 @@
                                         </div>
                                         <h4 class="mb-2">Falafel Platter</h4>
                                         <p class="menu-description">
-                                            Falafel balls, hummus, salad, pickles, tahini sauce, and pita bread.
+                                            Falafel balls, hummus, salad, pickles, tahini sauce, and garlic potatoes.
                                         </p>
                                     </div>
-                                    <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
-                                        <div class="text-center">
-                                            <span class="label-small">S</span><br>
-                                            <span class="price-bubble">$10.99</span>
-                                        </div>
-                                        <div class="text-center">
-                                            <span class="label-small">L</span><br>
-                                            <span class="price-bubble">$13.49</span>
-                                        </div>
+                                    <div class="d-flex justify-content-end mt-auto price-align">
+                                        <span class="price-bubble">$12.00</span>
                                     </div>
                                 </div>
                             </div>
@@ -453,7 +565,7 @@
                 <h2 class="section-title text-start">Desserts / Drinks</h2>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p>Fruit Salads with Ashta and Nuts<br>Fresh Fruit Juices and Smoothies<br>Fried Chicken & Fried Chicken Combo</p>
+                        <p>Fruit Salads with Ashta and Nuts<br>Fresh Fruit Juices and Smoothies</p>
                     </div>
                 </div>
             </div>

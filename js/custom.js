@@ -27,21 +27,30 @@
   });
 });
 
-// Swipe technique
+
+// Swipe technique (multi-section support)
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollContainer = document.querySelector('.wraps-scroll-container');
-    const scrollRight = document.getElementById('scroll-right');
-    const scrollLeft = document.getElementById('scroll-left');
+    const scrollWrappers = document.querySelectorAll('.wraps-scroll-wrapper');
 
-    const scrollAmount = 320; // Adjust scroll distance as needed
+    scrollWrappers.forEach(wrapper => {
+        const container = wrapper.querySelector('.wraps-scroll-container');
+        const scrollLeft = wrapper.querySelector('.scroll-left');
+        const scrollRight = wrapper.querySelector('.scroll-right');
+        const scrollAmount = 320;
 
-    scrollRight.addEventListener('click', function () {
-        scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    });
+        if (scrollRight) {
+            scrollRight.addEventListener('click', () => {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
 
-    scrollLeft.addEventListener('click', function () {
-        scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        if (scrollLeft) {
+            scrollLeft.addEventListener('click', () => {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+        }
     });
 });
+
 
 
