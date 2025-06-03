@@ -6,6 +6,9 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- detection on sfari off for "numbers email.." --> 
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+
 
     <title>Mango Cafe Menu</title>
 
@@ -284,7 +287,9 @@
                                         </div>
                                         <h4 class="mb-2">Classic Burger</h4>
                                         <p class="menu-description">
-                                            Beef patty, lettuce, tomato, pickles, mustard, mayo, and ketchup.
+                                            Beef patty, lettuce, tomato, pickles, mustard, mayo, and ketchup.<br>
+                                            - Patty: $3.00<br>
+                                            - Cheese: $0.75
                                         </p>
                                     </div>
                                     <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
@@ -310,7 +315,9 @@
                                         </div>
                                         <h4 class="mb-2">Chicken Burger</h4>
                                         <p class="menu-description">
-                                            Chicken fillet, lettuce, tomato, and garlic mayo.
+                                            Chicken fillet, lettuce, tomato, and garlic mayo.<br>
+                                            - Patty: $3.00<br>
+                                            - Cheese: $0.75
                                         </p>
                                     </div>
                                     <div class="d-flex justify-content-end gap-3 align-items-end mt-auto">
@@ -339,7 +346,7 @@
                                             Crispy golden fried chicken with garlic dip, can, and a side of garlic potatoes or rice.
                                         </p>
                                     </div>
-                                    <div class="d-flex justify-content-end mt-auto">
+                                    <div class="d-flex justify-content-end mt-auto price-align">
                                         <span class="price-bubble">$6.50</span>
                                     </div>
                                 </div>
@@ -358,7 +365,7 @@
                                             5pc fried chicken, garlic dip, can, and a side of rice or garlic potatoes.
                                         </p>
                                     </div>
-                                    <div class="d-flex justify-content-end mt-auto">
+                                    <div class="d-flex justify-content-end mt-auto price-align">
                                         <span class="price-bubble">$14.99</span>
                                     </div>
                                 </div>
@@ -558,9 +565,79 @@
             </div>
         </section>
 
+        <!-- Family section -->
+        <section id="family" class="menu section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title text-start">Family Meals</h2>
+                <div class="row">
+
+                <!-- Shawarma Family Platters -->
+                    <div class="col-6">
+                        <div class="menu-card h-100 w-100">
+                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                            <div>
+                            <div class="menu-image-wrap">
+                                <img src="images/shawarma-family.jpg" class="img-fluid menu-image" alt="Shawarma Family Platters">
+                                <span class="menu-calorie">~1100–1500 kcal</span>
+                            </div>
+                            <h4 class="mb-2">Shawarma Family Platters</h4>
+                            <p class="menu-description">
+                                Chicken and/or beef shawarma with rice, potatoes, salad, tabbouleh, veggies, hummus, and garlic.
+                            </p>
+                            </div>
+                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                            <div class="text-center">
+                                <span class="label-small">For 3</span><br>
+                                <span class="price-bubble">$40.00</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="label-small">For 5</span><br>
+                                <span class="price-bubble">$54.00</span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- BBQ Family Platters -->
+                    <div class="col-6">
+                        <div class="menu-card h-100 w-100">
+                        <div class="menu-thumb d-flex flex-column h-100 justify-content-between bg-light p-2">
+                            <div>
+                            <div class="menu-image-wrap">
+                                <img src="images/bbq-family.jpg" class="img-fluid menu-image" alt="BBQ Family Platters">
+                                <span class="menu-calorie">~1200–1600 kcal</span>
+                            </div>
+                            <h4 class="mb-2">BBQ Family Platters</h4>
+                            <p class="menu-description">
+                                Mixed skewers (kabab, taouk, kafta) served with rice, potatoes, salad, tabbouleh, veggies, hummus, and garlic.
+                            </p>
+                            </div>
+                            <div class="d-flex justify-content-end gap-3 align-items-end mt-auto price-align">
+                            <div class="text-center">
+                                <span class="label-small">For 3</span><br>
+                                <span class="price-bubble">$40.00</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="label-small">For 5</span><br>
+                                <span class="price-bubble">$54.00</span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
 
         <!-- DD section -->
-        <section id="desserts" class="menu section-padding bg-light">
+        <section id="desserts" class="menu section-padding bg-white">
             <div class="container">
                 <h2 class="section-title text-start">Desserts / Drinks</h2>
                 <div class="row">
