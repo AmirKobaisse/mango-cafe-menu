@@ -240,6 +240,74 @@
   font-size: 0.8rem;
   font-weight: 600;
 }
+
+/* === Sides Section Clean Layout === */
+#sides {
+  background-color: #f9f9f9; /* optional light background */
+  padding: 20px 0;
+}
+
+#sides h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+#sides .label-small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #444;
+}
+
+#sides .flex-grow-1 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #111;
+}
+
+/* Price cells */
+#sides .d-flex.gap-3 > div {
+  font-size: 0.85rem;
+  color: #222;
+  font-weight: 500;
+  min-width: 60px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Grid layout fixes */
+#sides .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#sides .col-md-6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Optional: space between items */
+#sides .d-flex {
+  margin-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* Bold item names and S/R/L headers */
+#sides .flex-grow-1,
+#sides .label-small {
+  font-weight: 600;
+  text-align: left;
+  padding-left: 4px;
+}
+
+/* Keep price text normal */
+#sides .d-flex.gap-3.text-end > div {
+  font-weight: 400;
+}
+
 /* === Responsive Adjustments === */
 
 /* Tablet (≤ 992px): 2 cards per screen */
@@ -426,4 +494,24 @@
   #dessert-section .dessert-blended-layout::before {
     background: linear-gradient(to bottom, white 10%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%);
   }
+
+   /* Smaller font for mobile */
+  #sides .flex-grow-1 {
+    font-size: 0.75rem;
+    padding-left: 4px; /* Shift items closer to edge */
+  }
+
+  #sides .d-flex.gap-3 > div {
+    font-size: 0.7rem;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  #sides .col-md-6 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    border-right: none !important; /* No vertical line on mobile */
+  }
+
+
 }
