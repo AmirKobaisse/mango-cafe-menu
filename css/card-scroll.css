@@ -150,6 +150,96 @@
   font-weight: 600 !important;
 }
 
+
+/* === Fix layout for Fruit Salad section === */
+#fruit-salad .menu-card {
+  min-width: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+  flex: 1 1 auto !important;
+}
+
+#fruit-salad .menu-thumb {
+  padding: 8px !important;
+}
+
+#fruit-salad .menu-description {
+  font-size: 0.65rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.4rem !important;
+}
+
+#fruit-salad h4 {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.5rem !important;
+  text-align: left !important;
+}
+
+#fruit-salad .label-small {
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+}
+
+/* === Dessert Section with Gradient Readability Fix === */
+#dessert-section .dessert-blended-layout {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+/* Background image */
+#dessert-section .dessert-bg-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/kashta-plate.jpg');
+  background-size: cover;
+  background-position: center right;
+  filter: brightness(60%);
+  z-index: 1;
+}
+
+/* Gradient overlay to keep left side white */
+#dessert-section .dessert-blended-layout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, white 40%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0.0) 80%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Content above image + gradient */
+#dessert-section .row {
+  position: relative;
+  z-index: 3;
+}
+
+/* Text styling */
+#dessert-section h2.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+#dessert-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#dessert-section .menu-description {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+
+#dessert-section .label-small {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 /* === Responsive Adjustments === */
 
 /* Tablet (≤ 992px): 2 cards per screen */
@@ -306,5 +396,34 @@
     font-size: 0.6rem !important;
     font-weight: 600;
     margin-bottom: 4px;
+  }
+
+  /* For dessert section */
+  /* Make sure text block aligns like other sections */
+  #dessert-section .col-12 {
+    padding: 1.5rem 1rem !important;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #dessert-section .col-12 > * {
+    text-align: left !important;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Make sure image is still positioned correctly */
+  #dessert-section .dessert-bg-image {
+    background-position: right center !important;
+    background-size: cover !important;
+  }
+
+  /* Soften image fade */
+  #dessert-section .dessert-blended-layout::before {
+    background: linear-gradient(to bottom, white 10%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%);
   }
 }
