@@ -31,7 +31,7 @@ Please refer to the [LICENSE](LICENSE) file for full details.
 For business inquiries or permission requests:
 
 **Amir Kobaisse**  
-📧 amirkobaisse@icloud.com  
+📧 koba0024@algonquinlive.com  
 🌍 Ottawa, Canada
 
 ---
